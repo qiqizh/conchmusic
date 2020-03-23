@@ -1,6 +1,6 @@
 <!--pages/discover/index.wxml-->
 <!-- <text>pages/discover/index.wxml</text> -->
-<scroll-view class="bg_color">
+<view class="bg_color">
   <view class="input_wrapper">
     <input placeholder="搜索歌曲、歌手"></input>
   </view>
@@ -11,10 +11,76 @@
     </view>
   <!-- 切换内容 -->
   <view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
-    <text>tab1</text>
+      <scroll-view class="center_wrapper fature_recommd">
+      <!-- <text>tab1</text> -->
+        <swiper indicator-dots="true" autoplay="true">
+          <swiper-item>
+          <view>
+            <image src="/images/huahua.jpg"></image>
+          </view>
+          </swiper-item>
+           <swiper-item>
+            <view>
+              <image src="/images/zhoushen.jpeg"></image>
+            </view>
+          </swiper-item>
+        </swiper>
+        <view class="song_item">
+        <view class="item">
+          <view class="icon"><image src="/images/discover/tuijian.png"></image></view>
+          <view class="tit">
+          <text>每日歌曲推荐</text>
+          </view>
+        </view>
+        <view class="item">
+          <view class="icon"><image src="/images/discover/sort.png"></image></view>
+          <view class="tit">
+          <text>音乐热歌榜</text>
+          </view>
+        </view>
+        </view>
+        <view class="recommend_type">
+          <view class="type_wrapper">
+            <view class="type_tit">
+              <text>推荐歌单</text>
+            </view>
+            <view class="type_list">
+            </view>
+          </view>
+          <!-- second-start -->
+          <view class="type_wrapper">
+            <view class="type_tit">
+              <text>独家放送</text>
+            </view>
+            <view class="type_list">
+            </view>
+          </view>
+          <!-- second-end -->
+           <!-- third-start -->
+          <view class="type_wrapper">
+            <view class="type_tit">
+              <text>最新音乐</text>
+            </view>
+            <view class="type_list">
+            </view>
+          </view>
+          <!-- third-end -->
+           <!-- fourth-start -->
+          <view class="type_wrapper">
+            <view class="type_tit">
+              <text>推荐MV</text>
+            </view>
+            <view class="type_list">
+            </view>
+          </view>
+          <!-- fourth-end -->
+        </view>
+      </scroll-view>
   </view>
   <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
-  <text>tab2</text>
+      <scroll-view class="center_wrapper">
+        <text>tab2</text>
+      </scroll-view>
   </view>
   </view>
-</scroll-view>
+</view>
