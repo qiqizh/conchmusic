@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/discover/index",
+    "pages/logs/logs",
+    "pages/mymusic/index",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#00C5CD",
+    "list": [
+      {
+        "pagePath": "pages/discover/index",
+        "text": "发现音乐",
+        "iconPath": "/images/faxian.png",
+        "selectedIconPath": "/images/faxian-a.png"
+      },
+      {
+        "pagePath": "pages/mymusic/index",
+        "text": "我的音乐",
+        "iconPath": "/images/music.png",
+        "selectedIconPath": "/images/music-a.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "账号",
+        "iconPath": "/images/person.png",
+        "selectedIconPath": "/images/person-a.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
